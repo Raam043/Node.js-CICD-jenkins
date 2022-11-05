@@ -19,16 +19,10 @@ yum install git -y
 ```
 
 Enable nodejs packages on Linux server
-```sh
-curl -sL https://rpm.nodesource.com/setup_15.x | bash -
-```
-
 Install development tools.
-```sh
-yum groupinstall 'Development Tools'
-```
-
 Install nodejs
 ```sh
+curl -sL https://rpm.nodesource.com/setup_15.x | bash -
+yum groupinstall 'Development Tools'
 yum -y install nodejs
 ```
